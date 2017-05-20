@@ -52,10 +52,18 @@ function NugetRestore
         {   
 	        $nugetRestoreCommand += " -source " + $source 
         } 
-
+	
+	Write-Output "== First Command =="
+	Write-output $nugetRestoreCommand
+	
         $nugetRestoreCommand += " $solutionPath"
 
+	Write-Output "== Final Command to run"
+	Write-Output $nugetRestoreCommand
+	
         Invoke-Expression($nugetRestoreCommand)
+	
+	Write-Output "End"
     }
     finally
     {
