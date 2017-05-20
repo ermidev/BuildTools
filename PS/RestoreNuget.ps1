@@ -3,7 +3,7 @@ Param(
     [string]$solutionPath = $(throw "Please pass solution path"),
 
     [parameter(HelpMessage="The path to the Nuget.exe")]
-    [string]$nugetPath = (get-item $PSScriptRoot).parent.FullName + "\Nuget\Nuget.exe",
+    [string]$nugetPath = (get-item $PSScriptRoot).parent.FullName + "\Nuget.exe",
 
     [parameter(HelpMessage="Nuget source")]
     [string]$nugetSource = "https://nexus.sb.karmalab.net/nexus/service/local/nuget/nuget.org/"
