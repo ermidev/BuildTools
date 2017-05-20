@@ -98,3 +98,5 @@ function NugetRestore_Vdrive
         Pop-Location
     }
 }
+#entry point
+main
